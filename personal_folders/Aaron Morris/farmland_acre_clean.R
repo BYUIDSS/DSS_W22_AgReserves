@@ -10,8 +10,8 @@ farmland_acres <- dat %>%
 
 farmland_state_acres <- farmland_acres %>% 
   group_by(state) %>% 
-  summarise(acres = sum(`Total Acres`),
-            tillable_acres = sum(`Tillable Acres`))
+  summarise(acres = sum(`Total Acres`, na.rm = TRUE),
+            tillable_acres = sum(`Tillable Acres`, na.rm = TRUE))
 
 write_csv(farmland_acres, "clean_farmland_acres.csv")
 write_csv(farmland_state_acres, "farmland_state_acres.csv")
