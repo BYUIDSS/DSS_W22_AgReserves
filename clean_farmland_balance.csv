@@ -1,0 +1,81 @@
+item,category,year,amount_usd
+"Land, at cost",assets,2021,931803
+"Land, at cost",assets,2020,924952
+Grain facilities,assets,2021,11282
+Grain facilities,assets,2020,12091
+Groundwater,assets,2021,10214
+Groundwater,assets,2020,10214
+Irrigation improvements,assets,2021,52703
+Irrigation improvements,assets,2020,53887
+Drainage improvements,assets,2021,12606
+Drainage improvements,assets,2020,12805
+Permanent plantings,assets,2021,53741
+Permanent plantings,assets,2020,54374
+Other,assets,2021,6783
+Other,assets,2020,8167
+Construction in progress,assets,2021,10153
+Construction in progress,assets,2020,9284
+"Real estate, at cost",assets,2021,1089285
+"Real estate, at cost",assets,2020,1085774
+Less accumulated depreciation,assets,2021,37082
+Less accumulated depreciation,assets,2020,32654
+"Total real estate, net",assets,2021,1052203
+"Total real estate, net",assets,2020,1053120
+Deposits,assets,2021,2155
+Deposits,assets,2020,NA
+Cash,assets,2021,21373
+Cash,assets,2020,27217
+Assets held for sale,assets,2021,518
+Assets held for sale,assets,2020,NA
+"Notes and interest receivable, net",assets,2021,6128
+"Notes and interest receivable, net",assets,2020,2348
+Right of use asset,assets,2021,142
+Right of use asset,assets,2020,93
+Deferred offering costs,assets,2021,76
+Deferred offering costs,assets,2020,NA
+"Deferred financing fees, net",assets,2021,22
+"Deferred financing fees, net",assets,2020,87
+"Accounts receivable, net",assets,2021,7221
+"Accounts receivable, net",assets,2020,4120
+Inventory,assets,2021,1705
+Inventory,assets,2020,1117
+Equity-method investments,assets,2021,3424
+Equity-method investments,assets,2020,NA
+Prepaid and other assets,assets,2021,1919
+Prepaid and other assets,assets,2020,2889
+"Mortgage notes and bonds payable, net",liabilities,2021,499533
+"Mortgage notes and bonds payable, net",liabilities,2020,506625
+Lease liability,liabilities,2021,142
+Lease liability,liabilities,2020,93
+Dividends payable,liabilities,2021,1715
+Dividends payable,liabilities,2020,1612
+Derivative liability,liabilities,2021,1239
+Derivative liability,liabilities,2020,2899
+Accrued interest,liabilities,2021,3103
+Accrued interest,liabilities,2020,3446
+Accrued property taxes,liabilities,2021,2588
+Accrued property taxes,liabilities,2020,1817
+Deferred revenue,liabilities,2021,31
+Deferred revenue,liabilities,2020,37
+Accrued expenses,liabilities,2021,12767
+Accrued expenses,liabilities,2020,8272
+Total liabilities,liabilities,2021,521118
+Total liabilities,liabilities,2020,524801
+Commitments and contingencies (See Note 8),liabilities,2021,NA
+Commitments and contingencies (See Note 8),liabilities,2020,NA
+"Series B Participating Preferred Stock, $0.01 par value, 6,037,500 shares authorized; 5,806,797 shares issued and outstanding at September 30, 2021, and 5,831,870 at December 31, 2020",liabilities,2021,139116
+"Series B Participating Preferred Stock, $0.01 par value, 6,037,500 shares authorized; 5,806,797 shares issued and outstanding at September 30, 2021, and 5,831,870 at December 31, 2020",liabilities,2020,139766
+"Redeemable non-controlling interest in operating partnership, Series A preferred units",liabilities,2021,119633
+"Redeemable non-controlling interest in operating partnership, Series A preferred units",liabilities,2020,120510
+"Common stock, $0.01 par value, 500,000,000 shares authorized; 32,942,696 shares issued and outstanding at September 30, 2021, and 30,571,271 shares issued and outstanding at December 31, 2020",equity,2021,319
+"Common stock, $0.01 par value, 500,000,000 shares authorized; 32,942,696 shares issued and outstanding at September 30, 2021, and 30,571,271 shares issued and outstanding at December 31, 2020",equity,2020,297
+Additional paid in capital,equity,2021,374966
+Additional paid in capital,equity,2020,345870
+Retained earnings (deficit),equity,2021,11066
+Retained earnings (deficit),equity,2020,1037
+Cumulative dividends,equity,2021,59579
+Cumulative dividends,equity,2020,54751
+Other comprehensive income,equity,2021,284
+Other comprehensive income,equity,2020,2380
+Non-controlling interests in operating partnership,equity,2021,12663
+Non-controlling interests in operating partnership,equity,2020,15841
