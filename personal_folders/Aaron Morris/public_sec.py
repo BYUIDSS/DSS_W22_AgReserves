@@ -5,6 +5,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 import pandas as pd
 from bs4 import BeautifulSoup
+import lxml.html as lh
+import requests
 
 
 # %%
@@ -45,16 +47,52 @@ window2 = handles[1]
 driver.switch_to.window(window2)
 
 # %%
+
+# consolidated balance sheet 
+ 
 sleep(2)
 driver.find_element_by_xpath('//*[@id="statementsAnchor"]').click()
 driver.find_element_by_xpath('//*[@id="statementsMenu"]/div/ul/li[1]/a').click()
-html = driver.page_source
-soup = BeautifulSoup(html)
-tables = soup.find_all('table')
-df = pd.read_html(str(tables))[0]
+#table1 = driver.find_element_by_xpath('//*[@id="idm140656664396024"]')
+url1 = driver.current_url
+page = requests.get(url1)
+soup = BeautifulSoup(page.text, 'lxml')
+table1 = soup.find('table', id = 'idm140656664396024')
+headers = []
+for i in table1.find_all('th'):
+    title = i.text
+    headers.append(title)
+balance_sheet = pd.DataFrame(columns = headers)
+for i in table1.find_all('tr')[1:]:
+    row_data = i.find_all('td')
+    row = [j.text for j in row_data]
+    length = len(balance_sheet)
+    balance_sheet.loc[length] = row
 
+balance_sheet.to_csv('farmland_balance_sheet.csv')
 
+# %%
 
+# acre perecentages
+
+# driver.find_element_by_xpath('//*[@id="disclosuresTablesAnchor"]').click()
+# sleep(1)
+# driver.find_element_by_xpath('//*[@id="disclosuresTablesMenu"]/div/ul/li[3]/a').click()
+# url2 = driver.current_url
+# page = requests.get(url2)
+# soup = BeautifulSoup(page.text, 'lxml')
+# table2 = soup.find('table', style = 'border-collapse:collapse;font-size:16pt;height:max-content;padding-left:0pt;padding-right:0pt;width:100%;')
+# headers2 = []
+# for i in table2.find_all('th'):
+#     title = i.text
+#     headers.append(title)
+
+# acre_percent = pd.DataFrame(columns = headers2)
+# for i in table2.find_all('tr')[1:]:
+#     row_data = i.find_all('td')
+#     row = [j.text for j in row_data]
+#     length = len(acre_percent)
+#     acre_percent.loc[length] = row
 
 
 
